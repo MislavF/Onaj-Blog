@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_marginTop="15dp"
+    android:layout_marginRight="15dp"
+    android:layout_marginLeft="15dp"
+    app:cardUseCompatPadding="true"
+    app:cardPreventCornerOverlap="true"
+    android:clipToPadding="true"
+    app:cardCornerRadius="12dp"
+    android:elevation="90dp">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutProjects"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/colorAccent">
+        
+        <ImageView
+            android:id="@+id/projectPostImage"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"/>
+        
+        <TextView
+            android:id="@+id/projectPostTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/projectPostImage"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            tool:text="Post Title"
+            android:maxLines="1"
+            android:ellipsize="end"/>
+
+        <TextView
+            android:id="@+id/projectPostContent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:layout_toEndOf="@+id/projectPostImage"
+            android:layout_below="@+id/projectPostTitle"
+            android:textSize="15sp"
+            android:textColor="#ffffff"
+            tool:text="Post Content"
+            android:maxLines="3"
+            android:ellipsize="end"/>
+
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>
